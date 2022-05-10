@@ -7,10 +7,10 @@ class CustomScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(26, 9, 56, 1),
+      backgroundColor: Color.fromRGBO(155, 95, 196, 1),
       appBar: AppBar(
         title: Text(this.title),
-        backgroundColor: Color.fromRGBO(26, 9, 56, 1),
+        backgroundColor: Color.fromRGBO(155, 95, 196, 1),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -50,20 +50,6 @@ class CustomScaffold extends StatelessWidget {
                 Navigator.pushNamed(context, "/info");
               },
             ),
-            // IconButton(
-            //   icon: Icon(
-            //     Icons.search,
-            //     color: Colors.white,
-            //   ),
-            //   onPressed: () {},
-            // ),
-            // IconButton(
-            //   icon: Icon(
-            //     Icons.print,
-            //     color: Colors.white,
-            //   ),
-            //   onPressed: () {},
-            // ),
             IconButton(
               icon: Icon(
                 Icons.person,

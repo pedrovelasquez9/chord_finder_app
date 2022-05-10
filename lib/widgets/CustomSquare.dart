@@ -9,13 +9,39 @@ class CustomSquare extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.all(10),
+        margin: EdgeInsets.all(25),
         child: ElevatedButton(
-            style: ElevatedButton.styleFrom(primary: Colors.deepPurple),
+            style: ElevatedButton.styleFrom(primary: Color.fromRGBO(155, 95, 196, 1)),
             onPressed: () => {
                   Navigator.pushNamed(context, "/details",
                       arguments: ScreenArguments(this.text))
                 },
-            child: CustomText(this.text, Colors.white, fontSize: 40)));
+            child: CustomText(this.text, Colors.white, fontSize: 40)),
+        decoration: BoxDecoration(
+                    color: Color.fromRGBO(155, 95, 196, 1),
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(8.0),
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end:Alignment.center,
+                      colors: [
+                        Color.fromRGBO(140, 86, 176, 1),
+                        Color.fromRGBO(166, 102, 210, 1)
+                      
+                      ]),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color.fromRGBO(132, 81, 167, 1),
+                        blurRadius: 60.0,
+                        offset: Offset(20, 20),
+                      ),
+                      BoxShadow(
+                        color: Color.fromRGBO(178, 109, 225, 1),
+                        blurRadius: 60.0,
+                        offset: Offset(-20, -20),
+                      ),
+                    ],
+                  ),    
+        );
   }
 }

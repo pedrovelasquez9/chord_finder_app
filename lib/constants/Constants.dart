@@ -1,7 +1,7 @@
 class Constants {
   static const Map CONSTANTS = {
-    "api_base_url": "http://cafeceros.com:3000/chords",
-    "api_img_base_url": "http://cafeceros.com:3000/chord"
+    "api_base_url": "http://localhost:3000/chords",
+    "api_img_base_url": "http://localhost:3000/chord"
   };
 
   Map getConstants() {
