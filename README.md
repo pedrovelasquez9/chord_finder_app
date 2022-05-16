@@ -1,6 +1,6 @@
 # chord_finder
 
-Guitar chord finder  application
+Guitar chord finder application
 
 ## Getting Started
 

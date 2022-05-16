@@ -29,7 +29,8 @@ class HowToUseTab extends StatelessWidget {
           ),
           CustomText(
               "3 Elige qué acorde quieres ver y te llevará al diagrama del acorde para que puedas ver la posición de los dedos en los trastes y cuerdas de la guitarra",
-              Colors.white)
+              Colors.white),
+              Image.asset('./assets/how_to_use_background.png')
         ],
       ),
     );

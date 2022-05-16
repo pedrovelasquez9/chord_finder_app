@@ -41,7 +41,7 @@ class _ToolsListState extends State<ToolsList> {
                           child: Padding(
                             padding: EdgeInsets.only(left: 20),
                             child:CustomText(
-                              widget.item.esNotation.toString(), Colors.white,
+                              widget.item.name.toString()+"  ("+widget.item.esNotation.toString()+")", Colors.white,
                               fontSize: 29)),
                         ),
                         Expanded(

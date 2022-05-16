@@ -26,7 +26,8 @@ class AboutTab extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          CustomText("¡Muchas gracias por tu apoyo!", Colors.white)
+          CustomText("¡Muchas gracias por tu apoyo!", Colors.white),
+          Image.asset('./assets/about_background.png')
         ],
       ),
     );
