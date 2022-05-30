@@ -4,8 +4,6 @@ import 'package:chord_finder/models/ChordListArguments.dart';
 import 'package:chord_finder/widgets/CustomSquare.dart';
 import 'package:flutter/material.dart';
 import 'package:chord_finder/api/HttpHelpers.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
-import 'package:chord_finder/widgets/CustomTitle.dart';
 import 'package:chord_finder/layout/CustomLoading.dart';
 
 class ChordList extends StatefulWidget {

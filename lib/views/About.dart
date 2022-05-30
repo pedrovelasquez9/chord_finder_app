@@ -1,123 +1,78 @@
-import 'package:chord_finder/models/Tools.dart';
+import 'package:chord_finder/constants/NetworkConstants.dart';
 import 'package:chord_finder/widgets/CustomAvatar.dart';
+import 'package:chord_finder/widgets/CustomNetworks.dart';
 import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:chord_finder/widgets/CustomTitle.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 // ignore: must_be_immutable
 class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      alignment: Alignment.topCenter,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+        image: AssetImage("./assets/wave.png"),
+        alignment: Alignment.topCenter,
+      )),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Center(
-            child: CustomAvatar(90, "./assets/Logo.jpg"),
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          Center(
-            child: CustomText("Pedro Plasencia", Colors.white),
-          ),
-          SizedBox(
-            height: 70,
-          ),
           Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(
-                  child: GestureDetector(
-                onTap: _launchYoutubeURL,
-                child: Center(
-                  child: CustomAvatar(30, "./assets/youtube.png"),
-                ),
-              )),
-              Expanded(
-                  child: GestureDetector(
-                onTap: _launchIGURL,
-                child: Center(
-                  child: CustomAvatar(30, "./assets/instagram.png"),
-                ),
-              )),
-              Expanded(
-                  child: GestureDetector(
-                onTap: _launchFBURL,
-                child: Center(
-                  child: CustomAvatar(30, "./assets/facebook.png"),
-                ),
-              )),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 30, 0, 10),
+                child: CustomTitle("Programación en español"),
+              ),
             ],
           ),
-          SizedBox(
-            height: 50,
+          Center(
+            child: CustomAvatar(80, "./assets/Logo.png"),
           ),
-          Row(
-            children: [
-              Expanded(
-                  child: GestureDetector(
-                onTap: _launchLKURL,
-                child: Center(
-                  child: CustomAvatar(30, "./assets/linkedin.png"),
-                ),
-              )),
-              Expanded(
-                  child: GestureDetector(
-                onTap: _launchGHURL,
-                child: Center(
-                  child: CustomAvatar(30, "./assets/github.png"),
-                ),
-              )),
-            ],
-          )
+          SizedBox(
+            height: 30,
+          ),
+          // Text("Aplicación desarrollada con el fin de tener un primer contacto con Flutter y rediseñada/mejorada en directo por Twitch junto a la comunidad de Programación en español"),
+          Center(
+            child: CustomText(
+              "Aplicación desarrollada con el fin de tener un primer contacto con Flutter y rediseñada/mejorada en directo por Twitch junto a la comunidad de Programación en español",
+              Color.fromRGBO(255, 255, 255, 1),
+              fontSize: 15,
+              alignment: TextAlign.center,
+            ),
+          ),
+          SizedBox(height: 30),
+          CustomNetwork(
+            NetworksInfo.avatarImageURLYT,
+            NetworksInfo.networkNameYT,
+            NetworksInfo.networkURL,
+          ),
+          CustomNetwork(
+            NetworksInfo.avatarImageURLIG,
+            NetworksInfo.networkNameIG,
+            NetworksInfo.networkIG,
+          ),
+          CustomNetwork(
+            NetworksInfo.avatarImageURLFB,
+            NetworksInfo.networkNameFB,
+            NetworksInfo.networkFB,
+          ),
+          CustomNetwork(
+            NetworksInfo.avatarImageURLLK,
+            NetworksInfo.networkNameLK,
+            NetworksInfo.networkLK,
+          ),
+          CustomNetwork(
+            NetworksInfo.avatarImageURLGH,
+            NetworksInfo.networkNameGH,
+            NetworksInfo.networkGH,
+          ),
         ],
       ),
     );
-  }
-}
-
-_launchYoutubeURL() async {
-  const url = 'https://www.youtube.com/channel/UCNliuGyPizt7uNcdCrUoduQ';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchIGURL() async {
-  const url = 'https://www.instagram.com/programacion.es/';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchFBURL() async {
-  const url = 'https://www.facebook.com/programacion.en.esp';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchLKURL() async {
-  const url = 'https://www.linkedin.com/in/pedroplasencia/';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchGHURL() async {
-  const url = 'https://github.com/pedrovelasquez9';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
   }
 }
