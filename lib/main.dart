@@ -1,15 +1,15 @@
-import 'package:chord_finder/views/About.dart';
-import 'package:chord_finder/views/ChordList.dart';
-import 'package:chord_finder/views/Info.dart';
+import 'package:guitar_chord_book/views/About.dart';
+import 'package:guitar_chord_book/views/ChordList.dart';
+import 'package:guitar_chord_book/views/Info.dart';
 import 'package:flutter/material.dart';
-import 'package:chord_finder/layout/CustomScaffold.dart';
-import 'package:chord_finder/views/Details.dart';
-import 'package:chord_finder/views/Home.dart';
+import 'package:guitar_chord_book/layout/CustomScaffold.dart';
+import 'package:guitar_chord_book/views/Details.dart';
+import 'package:guitar_chord_book/views/Home.dart';
 
 void main() => runApp(MaterialApp(routes: {
       "/": (context) => CustomScaffold(
             view: Home(),
-            title: "Guitar Chord Finder",
+            title: "Guitar Chord Book",
           ),
       "/details": (context) => CustomScaffold(
             view: Details(),

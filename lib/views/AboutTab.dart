@@ -1,4 +1,4 @@
-import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -10,7 +10,7 @@ class AboutTab extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomText("¡Bienvenido a Chord finder!", Colors.white),
+          CustomText("¡Bienvenido a Guitar chord book!", Colors.white),
           SizedBox(
             height: 20,
           ),

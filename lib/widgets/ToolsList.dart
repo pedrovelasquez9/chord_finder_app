@@ -1,8 +1,8 @@
-import 'package:chord_finder/models/ChordListArguments.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:guitar_chord_book/models/ChordListArguments.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
 import 'package:flutter/material.dart';
-import 'package:chord_finder/widgets/CustomCard.dart';
-import 'package:chord_finder/models/Tools.dart';
+import 'package:guitar_chord_book/widgets/CustomCard.dart';
+import 'package:guitar_chord_book/models/Tools.dart';
 
 class ToolsList extends StatefulWidget {
   late Tools item;
@@ -39,10 +39,14 @@ class _ToolsListState extends State<ToolsList> {
                         Expanded(
                           flex: 2,
                           child: Padding(
-                            padding: EdgeInsets.only(left: 20),
-                            child:CustomText(
-                              widget.item.name.toString()+"  ("+widget.item.esNotation.toString()+")", Colors.white,
-                              fontSize: 29)),
+                              padding: EdgeInsets.only(left: 20),
+                              child: CustomText(
+                                  widget.item.name.toString() +
+                                      "  (" +
+                                      widget.item.esNotation.toString() +
+                                      ")",
+                                  Colors.white,
+                                  fontSize: 29)),
                         ),
                         Expanded(
                             flex: 1,
@@ -66,13 +70,12 @@ class _ToolsListState extends State<ToolsList> {
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(8.0),
                     gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end:Alignment.center,
-                      colors: [
-                        Color.fromRGBO(140, 86, 176, 1),
-                        Color.fromRGBO(166, 102, 210, 1)
-                      
-                      ]),
+                        begin: Alignment.topLeft,
+                        end: Alignment.center,
+                        colors: [
+                          Color.fromRGBO(140, 86, 176, 1),
+                          Color.fromRGBO(166, 102, 210, 1)
+                        ]),
                     boxShadow: [
                       BoxShadow(
                         color: Color.fromRGBO(132, 81, 167, 1),
@@ -87,16 +90,6 @@ class _ToolsListState extends State<ToolsList> {
                     ],
                   ),
                 ),
-                // Container(
-                //   margin: EdgeInsets.symmetric(vertical: 16.0),
-                //   alignment: FractionalOffset.centerLeft,
-                //   child: Image(
-                //     image: AssetImage(
-                //         "assets/chords/" + widget.item.name + ".png"),
-                //     height: 92.0,
-                //     width: 92.0,
-                //   ),
-                // ),
               ],
             )
           ],

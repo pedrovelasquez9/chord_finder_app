@@ -1,12 +1,12 @@
 import 'dart:ui';
 
-import 'package:chord_finder/models/ChordListArguments.dart';
+import 'package:guitar_chord_book/models/ChordListArguments.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:chord_finder/api/HttpHelpers.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
-import 'package:chord_finder/widgets/CustomTitle.dart';
-import 'package:chord_finder/layout/CustomLoading.dart';
+import 'package:guitar_chord_book/api/HttpHelpers.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
+import 'package:guitar_chord_book/widgets/CustomTitle.dart';
+import 'package:guitar_chord_book/layout/CustomLoading.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/parser.dart';
 

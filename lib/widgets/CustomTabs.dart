@@ -1,6 +1,6 @@
-import 'package:chord_finder/views/AboutTab.dart';
-import 'package:chord_finder/views/HowToUseTab.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:guitar_chord_book/views/AboutTab.dart';
+import 'package:guitar_chord_book/views/HowToUseTab.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
 import 'package:flutter/material.dart';
 
 const List<Tab> tabs = <Tab>[

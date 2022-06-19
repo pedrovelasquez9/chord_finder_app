@@ -1,5 +1,5 @@
 import 'package:http/http.dart';
-import 'package:chord_finder/constants/APIConstants.dart';
+import 'package:guitar_chord_book/constants/APIConstants.dart';
 import 'dart:convert'; //for jsonDecode
 
 class HttpHelpers {

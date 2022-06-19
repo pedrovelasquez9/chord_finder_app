@@ -8,7 +8,11 @@ class CustomTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       this.text,
-      style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1.0), letterSpacing: 2.0, fontSize: 20),
+      semanticsLabel: this.text,
+      style: TextStyle(
+          color: Color.fromRGBO(255, 255, 255, 1.0),
+          letterSpacing: 2.0,
+          fontSize: 20),
       textAlign: TextAlign.center,
     );
   }

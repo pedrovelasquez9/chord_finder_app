@@ -1,6 +1,6 @@
-# chord_finder
+# guitar_chord_book
 
-Guitar chord finder application
+Guitar chord book application
 
 ## Getting Started
 

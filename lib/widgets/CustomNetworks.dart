@@ -1,5 +1,5 @@
-import 'package:chord_finder/widgets/CustomAvatar.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:guitar_chord_book/widgets/CustomAvatar.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 

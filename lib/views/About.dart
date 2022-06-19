@@ -1,8 +1,8 @@
-import 'package:chord_finder/constants/NetworkConstants.dart';
-import 'package:chord_finder/widgets/CustomAvatar.dart';
-import 'package:chord_finder/widgets/CustomNetworks.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
-import 'package:chord_finder/widgets/CustomTitle.dart';
+import 'package:guitar_chord_book/constants/NetworkConstants.dart';
+import 'package:guitar_chord_book/widgets/CustomAvatar.dart';
+import 'package:guitar_chord_book/widgets/CustomNetworks.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
+import 'package:guitar_chord_book/widgets/CustomTitle.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable

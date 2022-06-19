@@ -16,6 +16,7 @@ class CustomDeleteBtn extends StatelessWidget {
           minWidth: 10.0,
           label: Text(
             "",
+            semanticsLabel: "Borrar",
             textAlign: TextAlign.center,
           ),
           icon: Icon(

@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-import 'package:chord_finder/models/ChordListArguments.dart';
-import 'package:chord_finder/widgets/CustomSquare.dart';
+import 'package:guitar_chord_book/models/ChordListArguments.dart';
+import 'package:guitar_chord_book/widgets/CustomSquare.dart';
 import 'package:flutter/material.dart';
-import 'package:chord_finder/api/HttpHelpers.dart';
-import 'package:chord_finder/layout/CustomLoading.dart';
+import 'package:guitar_chord_book/api/HttpHelpers.dart';
+import 'package:guitar_chord_book/layout/CustomLoading.dart';
 
 class ChordList extends StatefulWidget {
   const ChordList({Key? key}) : super(key: key);

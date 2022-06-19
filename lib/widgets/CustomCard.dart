@@ -1,10 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:chord_finder/models/Tools.dart';
-import 'package:chord_finder/widgets/CustomAvatar.dart';
-import 'package:chord_finder/widgets/CustomDeleteBtn.dart';
-import 'package:chord_finder/widgets/CustomText.dart';
+import 'package:guitar_chord_book/models/Tools.dart';
+import 'package:guitar_chord_book/widgets/CustomAvatar.dart';
+import 'package:guitar_chord_book/widgets/CustomDeleteBtn.dart';
+import 'package:guitar_chord_book/widgets/CustomText.dart';
 
 class CustomCard extends StatelessWidget {
   final Tools tool;
@@ -40,6 +40,7 @@ class CustomCard extends StatelessWidget {
                     ),
                     label: Text(
                       'Detalles',
+                      semanticsLabel: "Detalles",
                       style: TextStyle(color: Colors.white),
                     ),
                     onPressed: () {

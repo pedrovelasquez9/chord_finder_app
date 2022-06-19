@@ -1,6 +1,6 @@
-import 'package:chord_finder/widgets/CustomTabs.dart';
+import 'package:guitar_chord_book/widgets/CustomTabs.dart';
 import 'package:flutter/material.dart';
-import 'package:chord_finder/widgets/ToolsList.dart';
+import 'package:guitar_chord_book/widgets/ToolsList.dart';
 
 class Info extends StatelessWidget {
   @override

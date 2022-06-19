@@ -9,7 +9,10 @@ class CustomScaffold extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromRGBO(155, 95, 196, 1),
       appBar: AppBar(
-        title: Text(this.title),
+        title: Text(
+          this.title,
+          semanticsLabel: this.title,
+        ),
         backgroundColor: Color.fromRGBO(155, 95, 196, 1),
         centerTitle: true,
         elevation: 0.0,
@@ -24,7 +27,8 @@ class CustomScaffold extends StatelessWidget {
           Navigator.popUntil(context, (Route<dynamic> route) => route.isFirst);
           //code to execute on button press
         },
-        child: Icon(Icons.home), //icon inside button
+        child: Icon(Icons.home),
+        tooltip: "Ir a página principal", //icon inside button
       ),
 
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -42,6 +46,7 @@ class CustomScaffold extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
+              tooltip: "Ir a cómo usar la app",
               icon: Icon(
                 Icons.info,
                 color: Colors.white,
@@ -51,6 +56,7 @@ class CustomScaffold extends StatelessWidget {
               },
             ),
             IconButton(
+              tooltip: "Ir a página de información",
               icon: Icon(
                 Icons.person,
                 color: Colors.white,
